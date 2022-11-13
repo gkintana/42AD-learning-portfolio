@@ -283,3 +283,26 @@ h1.header {
 		padding-top: 20px;
 	}
 }
+
+.footer-container {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.social-icon {
+	color: #AAAAAA;
+	font-size: 48px;
+	display: inline;
+	text-decoration: none;
+	margin: 0 10px;
+}
+
+.social-icon:hover {
+	color: #010D2B;
+}
+
+@media (max-width: 945px) {
+	.social-icon {
+		color: #010D2B;
+	}
+}
