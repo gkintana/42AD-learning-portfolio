@@ -289,6 +289,20 @@ h1.header {
 	margin-bottom: 25px;
 }
 
+.project-link {
+	color: #AAAAAA;
+	font-size: 36px;
+	line-height: 50px;
+	margin-left: 5px;
+	vertical-align: middle;
+	display: inline;
+	text-decoration: none;
+}
+
+.project-link:hover {
+	color: #010D2B;
+}
+
 .social-icon {
 	color: #AAAAAA;
 	font-size: 48px;
@@ -303,6 +317,10 @@ h1.header {
 
 @media (max-width: 945px) {
 	.social-icon {
+		color: #010D2B;
+	}
+
+	.project-link {
 		color: #010D2B;
 	}
 }
