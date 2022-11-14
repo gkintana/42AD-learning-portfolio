@@ -12,6 +12,31 @@
 
 <body>
 
+	<!-- Header -->
+	<section id="header">
+		<div class="header container">
+		  <div class="nav-bar">
+			<div class="brand">
+			  <a style="text-decoration: none" class="logo" href="#home">
+				<h1>< GE.Kintana ></h1>
+			  </a>
+			</div>
+			<div class="nav-list">
+			  <div class="hamburger">
+				<div class="bar"></div>
+			  </div>
+			  <ul>
+				<li><a href="#home" data-after="Home">Home</a></li>
+				<li><a href="#about" data-after="About">About</a></li>
+				<li><a href="#project" data-after="Projects">Projects</a></li>
+				<li><a href="#contact" data-after="Contact">Contact</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	</section>
+	<!-- Header -->
+
 	<!-- Introduction -->
 	<section id="home">
 		<div class="introduction">
@@ -28,7 +53,7 @@
 	<section id="about">
 		<div class="about container">
 		  <div class="col-right">
-			<h1 class="section-title">About <span>Me</span></h1>
+			<h1 class="section-title" text-align="center">About <span>Me</span></h1>
 			<h2>Aspiring Full-Stack Developer</h2>
 			<p>
 				Hello! My name is Gerard, and I'm currently a software development student at 42 Abu Dhabi.
@@ -41,16 +66,17 @@
 			<!-- <a href="#" class="cta">Download Resume</a> -->
 		  </div>
 		</div>
-	  </section>
+	</section>
 	<!-- End of About Me -->
 
 	<!-- Projects -->
+	<section id="project">
 	<div class="main-container">
 		<section id="timeline" class="timeline-outer">
 			<div class="container" id="content">
 			<div class="row">
 				<div class="col s12 m12 l12">
-				<h1 class="blue-text lighten-1 header">Projects</h1>
+				<h1 class="section-title">Projects</h1>
 				<ul class="timeline">
 					<li class="event" data-date="Aug 2022 - Present">
 						<h3>FT_Containers</h3>
@@ -302,6 +328,7 @@
 			</div>
 		</section>
 	</div>
+	</section>
 	<!-- End of Projects -->
 
 	<!-- Footer -->
@@ -314,8 +341,10 @@
 		<a class="social-icon" href="https://linkedin.com/in/gkintana" target="_blank">
 			<ion-icon name="logo-linkedin"></ion-icon>
 		</a>
+		<script src="app.js"></script>
 	</div>
 	<!-- End of Footer -->
+	
 
 </body>
 
