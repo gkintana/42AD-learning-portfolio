@@ -159,18 +159,19 @@ html {
 	text-align: center;
 }
 
-section.timeline-outer {
-	width: 80%;
-	margin: 0 auto;
-}
-
 h1.header {
 	font-size: 5rem;
 	line-height: 70px;
 }
 
-/* Timeline */
-.timeline {
+/* Project List */
+
+section.project-list-outer {
+	width: 85%;
+	margin: 0 auto;
+}
+
+.project-list-info {
 	border-left: 8px solid #010D2B;
 	border-bottom-right-radius: 10px;
 	border-top-right-radius: 10px;
@@ -185,15 +186,15 @@ h1.header {
 	text-align: left;
 }
 
-.timeline h1,
-.timeline h2,
-.timeline h3 {
+.project-list-info h1,
+.project-list-info h2,
+.project-list-info h3 {
 	font-size: 2em;
 	margin-left: 15px;
 	margin-bottom: 25px;
 }
 
-.timeline p {
+.project-list-info p {
 	font-size: 1.5em;
 	font-weight: 300;
 	line-height: 25px;
@@ -202,27 +203,27 @@ h1.header {
 	margin-bottom: 10px;
 }
 
-.timeline .event {
+.project-list-info .event {
 	border-bottom: 1px solid rgba(160, 160, 160, 0.2);
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 	position: relative;
 }
 
-.timeline .event:last-of-type {
+.project-list-info .event:last-of-type {
 	padding-bottom: 0;
 	margin-bottom: 0;
 	border: none;
 }
 
-.timeline .event:before,
-.timeline .event:after {
+.project-list-info .event:before,
+.project-list-info .event:after {
 	position: absolute;
 	display: block;
 	top: 0;
 }
 
-.timeline .event:before {
+.project-list-info .event:before {
 	left: -175px;
 	color: #212121;
 	content: attr(data-date);
@@ -231,7 +232,7 @@ h1.header {
 	min-width: 130px;
 }
 
-.timeline .event:after {
+.project-list-info .event:after {
 	box-shadow: 0 0 0 8px #010D2B;
 	left: -20px;
 	background: white;
@@ -245,16 +246,16 @@ h1.header {
 
 
 @media (max-width: 945px) {
-	.timeline .event::before {
+	.project-list-info .event::before {
 		left: 0.5px;
 		top: 20px;
 		min-width: 0;
 		font-size: 13px;
 	}
-	.timeline h3 {
+	.project-list-info h3 {
 		font-size: 16px;
 	}
-	.timeline p {
+	.project-list-info p {
 		padding-top: 20px;
 	}
 	section.lab h3.card-title {
@@ -264,22 +265,22 @@ h1.header {
 }
 
 @media (max-width: 768px) {
-	.timeline .event::before {
+	.project-list-info .event::before {
 		left: 0.5px;
 		top: 20px;
 		min-width: 0;
 		font-size: 13px;
 	}
-	.timeline .event:nth-child(1)::before,
-	.timeline .event:nth-child(3)::before,
-	.timeline .event:nth-child(5)::before {
+	.project-list-info .event:nth-child(1)::before,
+	.project-list-info .event:nth-child(3)::before,
+	.project-list-info .event:nth-child(5)::before {
 		top: 20px;
 		min-width: 0;
 	}
-	.timeline h3 {
+	.project-list-info h3 {
 		font-size: 16px;
 	}
-	.timeline p {
+	.project-list-info p {
 		padding-top: 20px;
 	}
 }
